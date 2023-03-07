@@ -1,3 +1,4 @@
+import os
 """
 Django settings for movieAPI project.
 
@@ -32,6 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
 
+    #user Apps
     'movies',
     'rest_framework',
 
@@ -126,3 +128,18 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#media config
+MEDIA_URL =  'movieAPI/media/'
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'movieAPI/media')
+
+#email config
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'praj69849@gmail.com'
+EMAIL_HOST_PASSWORD = 'szcjhorpekogbuiv'
+
+
+

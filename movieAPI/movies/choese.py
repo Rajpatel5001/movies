@@ -1,13 +1,27 @@
-ch = (("ch","ch"),("ok","ok"))
-
-classes = (
+film_certificate = (
+    ('U','U'),
+    ('U/A','U/A'),
     ('A','A'),
-    ('b','b')
+    ('S','S')
 )
+
 gender = (
-    ("M","male"),
-    ("female","F")
+    ("male","male"),
+    ("female","female"),
+    ("other","other"),
 )
 cast = (
-    ("amazon_prime","amazon_prime"),
+    ("Amazon Prime","Amazon Pprime"),
+    ("Netflix","Netflix"),
+    ("Disney + Hotstar ","Disney + Hotstar"),
+    ("Zee5","Zee5"),
+    ("Voot","Voot"),
+    ("MX Player","MX Player")
+
+    
+)
+stat = (
+    ("Never Married","Never Married"),
+    ("Married","Married"),
+    (" Divorced"," Divorced")
 )
